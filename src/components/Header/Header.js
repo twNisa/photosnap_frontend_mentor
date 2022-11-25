@@ -23,7 +23,7 @@ export default function Header(){
     <HeaderContainer>
       <Nav>
         <NavLogoContainer>
-          <NavLink to="/">
+          <NavLink to="/photosnap_frontend_mentor/">
             <img src={logo} alt="photosnap" />
           </NavLink>
         </NavLogoContainer>
@@ -34,15 +34,15 @@ export default function Header(){
           <>
             <NavList>
               <NavLink
-                to="/stories"
+                to="/photosnap_frontend_mentor/stories"
               >
               stories
               </NavLink>
-              <NavLink to="/features"
+              <NavLink to="/photosnap_frontend_mentor/features"
               >
               features
               </NavLink>
-              <NavLink to="/pricing"
+              <NavLink to="/photosnap_frontend_mentor/pricing"
               >
               pricing
               </NavLink>

@@ -14,7 +14,7 @@ export default function Footer(){
       <FooterContent>
         <div>
           <FooterLogo>
-            <NavLink to="/">
+            <NavLink to="/photosnap_frontend_mentor/">
               <img src={logo} alt="photosnap" />
             </NavLink>
             <FooterSocials>
@@ -37,20 +37,20 @@ export default function Footer(){
           </FooterLogo>
           <FooterList>
             <NavLink
-              to="/"
+              to="/photosnap_frontend_mentor/"
             >
             home
             </NavLink>
             <NavLink
-              to="/stories"
+              to="/photosnap_frontend_mentor/stories"
             >
             stories
             </NavLink>
-            <NavLink to="/features"
+            <NavLink to="/photosnap_frontend_mentor/features"
             >
             features
             </NavLink>
-            <NavLink to="/pricing"
+            <NavLink to="/photosnap_frontend_mentor/pricing"
             >
             pricing
             </NavLink>
@@ -70,7 +70,7 @@ export default function Footer(){
             Challenge by <a href="https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW" target="_blank">Front end mentor</a>
             </p>
             <p>
-            made by <a href="#" target="_blank">twNisa</a>
+            made by <a href="https://github.com/twNisa/photosnap_frontend_mentor" target="_blank">twNisa</a>
             </p>
           </div>
         </FooterSide>

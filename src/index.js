@@ -18,29 +18,29 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path:"/",
+        path:"/photosnap_frontend_mentor/",
         element: <Home />,
         
       },
       {
-        path:"/stories",
+        path:"/photosnap_frontend_mentor/stories",
         element: <Stories />,
         
       },
       {
         
-        path: "/features",
+        path: "/photosnap_frontend_mentor/features",
         element: <Features />
         
       },
       {
         
-        path: "/pricing",
+        path: "/photosnap_frontend_mentor/pricing",
         element: <Pricing />
         
       },
       {
-        path:"*",
+        path:"/photosnap_frontend_mentor/*",
         element: <NotFound />
       }
     ]
