@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photosnap_frontend_mentor/static/css/main.a755b9db.css",
-    "main.js": "/photosnap_frontend_mentor/static/js/main.9fd12a5c.js",
+    "main.css": "/photosnap_frontend_mentor/static/css/main.07cd3ffc.css",
+    "main.js": "/photosnap_frontend_mentor/static/js/main.3b2f62d3.js",
     "static/media/beautiful-stories.jpg": "/photosnap_frontend_mentor/static/media/beautiful-stories.c53d42bed55e892d6a5e.jpg",
     "static/media/moon-of-appalacia.jpg": "/photosnap_frontend_mentor/static/media/moon-of-appalacia.241e18c36b39959723dc.jpg",
     "static/media/cityscapes.jpg": "/photosnap_frontend_mentor/static/media/cityscapes.f5cf644be0371b9b30ec.jpg",
@@ -39,11 +39,11 @@
     "static/media/youtube.svg": "/photosnap_frontend_mentor/static/media/youtube.d210bb87c07e3a7304b27a95c809a8e6.svg",
     "static/media/facebook.svg": "/photosnap_frontend_mentor/static/media/facebook.9a5fee2017d029404610bae7a23b8473.svg",
     "static/media/check.svg": "/photosnap_frontend_mentor/static/media/check.46b060c0a6f9d5931055e452d1363f6c.svg",
-    "main.a755b9db.css.map": "/photosnap_frontend_mentor/static/css/main.a755b9db.css.map",
-    "main.9fd12a5c.js.map": "/photosnap_frontend_mentor/static/js/main.9fd12a5c.js.map"
+    "main.07cd3ffc.css.map": "/photosnap_frontend_mentor/static/css/main.07cd3ffc.css.map",
+    "main.3b2f62d3.js.map": "/photosnap_frontend_mentor/static/js/main.3b2f62d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.a755b9db.css",
-    "static/js/main.9fd12a5c.js"
+    "static/css/main.07cd3ffc.css",
+    "static/js/main.3b2f62d3.js"
   ]
 }
