@@ -8,7 +8,7 @@ https://twnisa.github.io/photosnap_frontend_mentor/
 
 ## description
 practice project to learn styled-components.
-mobile navigation bar still WIP
+fully responsive!
 
 ## features
 - transition effects
@@ -19,6 +19,7 @@ mobile navigation bar still WIP
 - html/css
 - javascript
 - styled-components
+- react-burger-menu
 - framer-motion (to be added)
 
 
