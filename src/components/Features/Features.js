@@ -2,8 +2,15 @@ import BetaInvite from "../shared/BetaInvite";
 import { FeaturesContainer, FeaturesContent, FeaturesTextContainer, FeaturesImg } from "./FeaturesElements";
 import  bgImg  from '../../assets/features/desktop/hero.jpg';
 import FeaturesGrid from "./featuresGrid/FeaturesGrid"
+import React from "react";
 
-export default function Features(){
+export default function Features(props){
+
+  React.useEffect(()=>{
+    document.title = props.title || "";
+  }, [props.title])
+
+
   return (
     <>
 

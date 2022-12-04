@@ -4,7 +4,12 @@ import { PricingContainer, PricingTextContainer, PricingImg } from "./PricingEle
 import bgImg from "../../assets/pricing/desktop/hero.jpg"
 import Selection from "./Selection/Selection";
 import Compare from "./Compare/Compare";
-export default function Pricing(){
+
+export default function Pricing(props){
+
+  React.useEffect(()=>{
+    document.title = props.title || "";
+  }, [props.title])
 
   return (
     <>

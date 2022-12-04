@@ -54,6 +54,13 @@ export const NavList = styled.ul`
     transform: scaleX(1);
   }
 
+  @media screen and (max-width:767px){
+        outline:0;
+        border:0;
+        min-width:100%;
+        align-items: flex-start;
+    }
+
 `
 
 export const NavButton = styled.div`
