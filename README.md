@@ -20,6 +20,6 @@ fully responsive!
 - javascript
 - styled-components
 - react-burger-menu
-- framer-motion (to be added)
+- framer-motion
 
 
