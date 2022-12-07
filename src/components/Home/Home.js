@@ -3,6 +3,9 @@ import { HomeContainer } from "./HomeElements"
 import MainStack from "./MainStack/MainStack"
 import Gallery from "./gallery/Gallery"
 import Features from "./features/Features"
+import {motion} from "framer-motion"
+import {animations, pageTransition} from "../shared/animations"
+import { useLocation } from "react-router-dom"
 
 export default function Home(props){
 
@@ -10,11 +13,21 @@ export default function Home(props){
     document.title = props.title || "";
   }, [props.title])
 
+  const location = useLocation()
   return (
-    <HomeContainer>
+    <motion.HomeContainer
+      key={location}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={animations}
+      transition={pageTransition}
+
+    >
+
       <MainStack />
       <Gallery />
       <Features />
-    </HomeContainer>
+    </motion.HomeContainer>
   )
 }

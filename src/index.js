@@ -7,7 +7,6 @@ import {
   Route,
   useLocation,
 } from "react-router-dom"
-import { AnimatePresence } from "framer-motion";
 
 import Home from './components/Home/Home';
 import Stories from "./components/Stories/Stories"
@@ -15,6 +14,8 @@ import NotFound from './components/NotFound';
 import Features from './components/Features/Features';
 import Pricing from './components/Pricing/Pricing';
 import "./index.css"
+import {motion, AnimatePresence} from "framer-motion"
+
 
 
 const router = createBrowserRouter([
@@ -29,9 +30,7 @@ const router = createBrowserRouter([
           title="Photosnap"
           titleWidth={8}
           alt="Photosnap Homepage"
-
-        />),
-        
+        />),  
       },
       {
         path:"/photosnap_frontend_mentor/stories",
@@ -39,22 +38,20 @@ const router = createBrowserRouter([
           title="Stories"
           titleWidth={8}
           alt="Photosnap Stories"
-        />),
         
+        />),  
       },
       {
-        
         path: "/photosnap_frontend_mentor/features",
         element: (
         <Features
           title="Features"
           titleWidth={8}
           alt="Photosnap Features"
+          
         />)
-        
       },
       {
-        
         path: "/photosnap_frontend_mentor/pricing",
         element: (
         <Pricing 
@@ -62,7 +59,6 @@ const router = createBrowserRouter([
           titleWidth={8}
           alt="Photosnap Pricing"
         />)
-        
       },
       {
         path:"/photosnap_frontend_mentor/*",
@@ -70,7 +66,6 @@ const router = createBrowserRouter([
         <NotFound 
           title="Not Found"
           titleWidth={8}
-
         />)
       }
     ]
@@ -78,10 +73,14 @@ const router = createBrowserRouter([
 ])
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AnimatePresence exitBeforeEnter>
+      <RouterProvider router={router}/>
+    </AnimatePresence>
   </React.StrictMode>
 );
 

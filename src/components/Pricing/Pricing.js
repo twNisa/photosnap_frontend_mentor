@@ -4,15 +4,25 @@ import { PricingContainer, PricingTextContainer, PricingImg } from "./PricingEle
 import bgImg from "../../assets/pricing/desktop/hero.jpg"
 import Selection from "./Selection/Selection";
 import Compare from "./Compare/Compare";
+import { animations, pageTransition } from "../shared/animations";
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 export default function Pricing(props){
 
   React.useEffect(()=>{
     document.title = props.title || "";
   }, [props.title])
-
+  const location = useLocation()
   return (
-    <>
+    <motion.div
+      key={location}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={animations}
+      transition={pageTransition}
+    >
     <PricingContainer>
         <PricingTextContainer>
         <div>
@@ -26,6 +36,6 @@ export default function Pricing(props){
       <Selection />
       <Compare />
       <BetaInvite />
-    </>
+    </motion.div>
   )
 }
